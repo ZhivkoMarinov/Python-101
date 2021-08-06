@@ -1,5 +1,5 @@
 import unittest
-from C03P03_exception_silencing import ExceptionSilencer
+from C03P03_Exception_silencing import ExceptionSilencer
 
 
 class TestExceptionSilencer(unittest.TestCase):
