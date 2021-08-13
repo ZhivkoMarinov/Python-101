@@ -67,12 +67,9 @@ class Fraction:
 
             new_numerator = (other.denominator * self.numerator) - (self.denominator * other.numerator)
             new_denominator = self.denominator * other.denominator
+            return Fraction(new_numerator, new_denominator)
 
-            if new_numerator != 0:
-                return Fraction(new_numerator, new_denominator)
-            return 0
-
-        raise TypeError('You can only add objects from same class')
+        raise TypeError('You can only subtract objects from same class')
 
     def __mul__(self, other):
         """
@@ -83,7 +80,7 @@ class Fraction:
             new_denominator = self.denominator * other.denominator
             return Fraction(new_numerator, new_denominator)
 
-        raise TypeError('You can only add objects from same class')
+        raise TypeError('You can only multiply objects from same class')
 
     def simplify(self):
         """
