@@ -34,7 +34,7 @@ class TestFraction(unittest.TestCase):
         self.assertTrue(Fraction(1, 5) == test2)
 
     def test_mul(self):
-        test = Fraction(5, 9) * Fraction(3, 7)        
+        test = Fraction(5, 9) * Fraction(3, 7)
 
         self.assertTrue(Fraction(15, 63) == test)
 
@@ -65,6 +65,3 @@ class TestFraction(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
-
-
