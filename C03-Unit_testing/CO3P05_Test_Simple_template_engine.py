@@ -113,7 +113,7 @@ class TestTemplateEngine(unittest.TestCase):
             self.assertEqual(engine.extract_variables(), ['first_name', 'tel', 'last_name', 'email'])
 
         with self.subTest('single { or }'):
-            template = 'Hello, { first_name }} {{ last_name }'
+            template = 'Hello, { first_name }} {{ last_name } { product }'
             engine = TemplateEngine(template)
             self.assertEqual(engine.extract_variables(), [])
 
