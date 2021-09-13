@@ -47,27 +47,3 @@ class TemplateEngine:
                 uniques.append(var)
 
         return uniques
-
-
-a = """
-Hello {{ first_name }} {{ last_name }},
-
-I hope this email finds you well. {{ first_name }}
-
-We are currently running a promotion for {{ product }}
-
-You can get your discount {{here}} {{here}}
-"""
-template1 = 'Hello there, {{y}}'
-engine = TemplateEngine(a)
-# rendered = engine.render(last_name='Ivanov', first_name='Ivan', product='iPhone', here='http://dksalkdsal.com')
-rendered = engine.render(last_name='marinov', first_name='zhivko', here='dhjashdjsa.com', product='iPhone')
-# rendered = engine.render(y='zhivko')
-
-# print(rendered)
-# print(engine.extract_variables())
-
-# x = re.finditer('{{\s*\\w*\s*}}', a)
-# for var in x:
-#     print(var.span())
-
